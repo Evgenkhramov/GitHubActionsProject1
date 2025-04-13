@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
   push:
     branches: 
-      - master
-      - 'dev-*'
-      - 'feat/**'
+      - master # main
+      - 'dev-*' # dev-new dev-this-new ....
+      - 'feat/**' # feat/some code feat/test/feat
     paths-ignore:
       - '.github/workflows/*'
 jobs:
